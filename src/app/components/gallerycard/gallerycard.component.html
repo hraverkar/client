@@ -1,0 +1,9 @@
+<div class="flex-container">
+  <mat-card class="flex-item" *ngFor="let gallery of gallerys">
+    <img mat-card-image src={{gallery.imageUrl}} alt="{{gallery.imageTitle}}">
+    <mat-card-header>
+      <mat-card-title>{{gallery.name}}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>{{gallery.imageDescription}}</mat-card-content>
+  </mat-card>
+</div>
